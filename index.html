@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HHFreaky Card Picker</title>
+    <style>
+        body { 
+            text-align: center; 
+            font-family: Arial, sans-serif; 
+            background-color: black;
+            margin: 0;
+            padding: 20px;
+        }
+        #logo {
+            max-width: 200px;
+            height: auto;
+            margin: 10px auto;
+            cursor: pointer;
+        }
+        #cardImage {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://github.com/mooda420/HH/blob/main/logo.jpg?raw=true" 
+         alt="HHFreaky Card Picker Logo" id="logo" onclick="pickCard()">
+    <div>
+        <img id="cardImage" src="" style="display: none;">
+    </div>
+
+    <script>
+        function pickCard() {
+            const cards = [
+                "https://github.com/mooda420/HH/blob/main/card%20(1).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(2).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(3).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(4).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(5).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(6).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(7).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(8).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(9).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(10).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(11).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(12).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(13).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(14).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(15).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(16).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(17).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(18).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(19).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(20).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(21).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(22).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(23).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(24).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(25).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(26).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(27).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(28).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(29).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(30).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(31).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(32).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(33).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(34).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(35).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(36).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(37).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(38).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(39).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(40).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(41).png?raw=true",
+                "https://github.com/mooda420/HH/blob/main/card%20(42).png?raw=true"
+            ];
+            const randomCard = cards[Math.floor(Math.random() * cards.length)];
+            document.getElementById("cardImage").src = randomCard;
+            document.getElementById("cardImage").style.display = "block";
+        }
+    </script>
+</body>
+</html>
